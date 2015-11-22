@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/half_black</item>
+        <item name="android:actionBarStyle">@style/actionbar</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- 支持库兼容 -->
+        <item name="colorPrimary">@color/actionbar_background</item>
+        <item name="colorPrimaryDark">@color/statusbar</item>
+        <item name="actionBarStyle">@style/actionbar</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/bluegrey</item>
+
+    </style>
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+    </style>
+
+    <style name="config_user_activity" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">#00FFFFFF</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="Settings_Activity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- 支持库兼容 -->
+        <item name="colorPrimaryDark">@color/statusbar</item>
+        <item name="actionBarStyle">@style/actionbar</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="actionbar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionbar_background</item>
+        <!-- 支持库兼容 -->
+        <item name="background">@color/actionbar_background</item>
+    </style>
+
+    <style name="WebViewActivityStyle" parent="AppTheme">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorButtonNormal">@color/black</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+</resources>

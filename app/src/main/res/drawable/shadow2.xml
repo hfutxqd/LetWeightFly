@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 正常状态 -->
+    <item>
+        <layer-list>
+            <item
+                android:bottom="1dp">
+                <shape>
+                    <solid
+                        android:color="#F0F0F0" />
+                </shape>
+            </item>
+            <item
+                android:bottom="2dp">
+                <shape>
+                    <solid
+                        android:color="#DDDDDD" />
+                </shape>
+            </item>
+            <item
+                android:bottom="3dp">
+                <shape>
+                    <solid
+                        android:color="#CCCCCC" />
+                </shape>
+            </item>
+            <item
+                android:bottom="4dp">
+                <shape>
+                    <solid
+                        android:color="#BBBBBB" />
+                </shape>
+            </item>
+            <item
+                android:bottom="5dp">
+                <shape>
+                    <solid
+                        android:color="@color/actionbar_background" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

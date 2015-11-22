@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="true"
+    >
+
+    <PreferenceCategory
+        android:title="@string/settings_title_userinfo"
+        >
+        <EditTextPreference
+            android:name="@string/your_name"
+            android:summary="@string/name_error"
+            android:title="@string/your_name"
+            android:key="name"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:maxLength="8"/>
+        <EditTextPreference
+            android:name="@string/your_age"
+            android:summary="@string/age_error"
+            android:title="@string/your_age"
+            android:key="age"
+            android:numeric="integer"
+            android:maxLength="2"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+            />
+        <EditTextPreference
+            android:name="@string/your_weight"
+            android:summary="@string/weight_error"
+            android:title="@string/your_weight"
+            android:key="weight"
+            android:numeric="decimal"
+            android:maxLength="4"
+            android:textColor="@color/black"/>
+        />
+        <EditTextPreference
+            android:name="@string/your_target"
+            android:summary="@string/target_error"
+            android:title="@string/your_target"
+            android:key="targetWeight"
+            android:numeric="decimal"
+            android:maxLength="4"
+            android:textColor="@color/black"/>
+        />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/title_tips"
+        >
+        <CheckBoxPreference
+            android:title="@string/can_display_img"
+            android:summary="@string/can_display_img_summary"
+            android:summaryOn="@string/can_display_summary_on"
+            android:summaryOff="@string/can_display_summary_off"
+            android:key="can_display_img"
+            android:defaultValue="true"
+            android:textColor="@color/black"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/title_software_info"
+        >
+        <Preference
+            android:title="@string/title_author"
+            android:summary="@string/author"
+            >
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://imxqd.cf" />
+        </Preference>
+        <Preference
+            android:title="@string/title_verson"
+            android:summary="@string/verson"
+            >
+        </Preference>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/title_legal_informatics"
+        >
+        <Preference
+            android:title="@string/title_disclaimer"
+            android:key="disclaimer"/>
+        <Preference
+            android:title="@string/title_copyright"
+            android:key="copyright"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

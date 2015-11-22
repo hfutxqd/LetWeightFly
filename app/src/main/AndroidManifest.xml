@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cf.imxqd.LetWeightFly" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name=".Services.StepService"
+            android:process=":StepService" />
+
+        <receiver android:name=".Receiver.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Receiver.AlarmBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cf.imxqd.alarm"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.MainActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.WelcomeActivity"
+            android:theme="@style/config_user_activity" >
+        </activity>
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.ConfigUserInfo"
+            android:theme="@style/config_user_activity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.SettingsActivity"
+            android:theme="@style/Settings_Activity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.WebViewActivity"
+            android:label="@string/title_activity_web_view"
+            android:theme="@style/WebViewActivityStyle" >
+        </activity>
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:windowSoftInputMode="adjustResize" >
+            <meta-data
+                android:name="android.support.v7.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:screenOrientation="locked"
+            android:name=".Activities.SearchDetail"
+            android:label="@string/title_activity_search_detail" >
+        </activity>
+    </application>
+
+</manifest>

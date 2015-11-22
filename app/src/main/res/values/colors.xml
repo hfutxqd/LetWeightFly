@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#F44336</color>
+    <color name="red_pressed">#EF5350</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="purpul">#9C27B0</color>
+    <color name="purpul_pressed">#AB47BC</color>
+    <color name="teal">#009688</color>
+    <color name="teal_pressed">#26A69A</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_pressed">#66BB6A</color>
+    <color name="lightgreen">#8BC34A</color>
+    <color name="lightgreen_pressed">#9CCC65</color>
+    <color name="orange">#FF9800</color>
+    <color name="orange_pressed">#FFA726</color>
+    <color name="deeporange">#FF5722</color>
+    <color name="deeporange_pressed">#FF7043</color>
+    <color name="brown">#795548</color>
+    <color name="brown_pressed">#8D6E63</color>
+    <color name="bluegrey">#607D8B</color>
+    <color name="black">#111111</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="config_text">#444444</color>
+    <color name="welcome_background">#00BCD4</color>
+    <color name="hintColor">#9E9E9E</color>
+    <color name="item_checked">#69F0AE</color>
+    <color name="actionbar_background">#009688</color>
+    <color name="actionbar_text">@color/white</color>
+    <color name="statusbar">#007668</color>
+    <color name="nav_background">#000000</color>
+
+    <color name="tabs_background">@color/actionbar_background</color>
+    <color name="white_hint">#D0D0D0</color>
+
+
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryPressed">#11A799</color>
+    <color name="colorPrimaryDark">@color/statusbar</color>
+
+    <color name="bg_item_normal_state">#fff0f0f0</color>
+    <color name="bg_item_dragging_state">#ffffdddd</color>
+    <color name="bg_item_dragging_active_state">#ffff9999</color>
+    <color name="bg_item_swiping_state">#ffddddff</color>
+    <color name="bg_item_swiping_active_state">#ff9999ff</color>
+
+    <color name="bg_group_item_normal_state">#ffddffdd</color>
+    <color name="bg_group_item_normal_pressed_state">#ff99cc99</color>
+    <color name="bg_group_item_expanded_state">#ff88dd88</color>
+    <color name="bg_group_item_expanded_pressed_state">#ff99cc99</color>
+    <color name="bg_group_item_dragging_state">#ffeeccff</color>
+    <color name="bg_group_item_dragging_active_state">#ffee99ff</color>
+    <color name="bg_group_item_swiping_state">#ffddccff</color>
+    <color name="bg_group_item_swiping_active_state">#ffbb99ff</color>
+
+    <color name="bg_swipe_item_neutral">#ffffffff</color>
+    <color name="bg_swipe_item_left">#fff9930d</color>
+    <color name="bg_swipe_item_right">#ff2f8b2a</color>
+    <color name="bg_swipe_group_item_left">#fff45f30</color>
+    <color name="bg_swipe_group_item_right">#ff295db3</color>
+
+    <color name="snackbar_action_color_done">#ffccccff</color>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tips_src">
+        <item>39减肥网</item>
+        <item>中国减肥网</item>
+    </string-array>
+    <string-array name="tips_src_val">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

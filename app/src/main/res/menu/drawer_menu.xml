@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/drawer_today_task"
+            android:icon="@drawable/ic_check_black_36dp"
+            android:title="@string/title_task"
+            android:checked="true"/>
+        <item android:id="@+id/drawer_history"
+            android:icon="@drawable/ic_trending_down_black_36dp"
+            android:title="@string/title_history"/>
+        <item android:id="@+id/drawer_tips"
+            android:icon="@drawable/ic_library_books_black_36dp"
+            android:title="@string/title_tips"/>
+    </group>
+    <item
+        android:icon="@drawable/ic_settings_black_36dp"
+        android:id="@+id/drawer_settings"
+        android:title="@string/nav_settings"/>
+
+</menu>
